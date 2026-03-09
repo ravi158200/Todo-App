@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium To-Do List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>My Premium Tasks</h1>
+            <p id="date-display">Today</p>
+        </header>
+        
+        <form id="todo-form">
+            <input type="text" id="todo-input" placeholder="What needs to be done?" autocomplete="off" required>
+            <button type="submit" id="add-btn"><i class="fas fa-plus"></i> Add</button>
+        </form>
+
+        <ul id="todo-list">
+            <!-- Loading indicator -->
+            <li class="skeleton">Loading tasks...</li>
+        </ul>
+        
+        <div class="stats">
+            <span id="task-count">0 tasks</span>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
